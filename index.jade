@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head
+		//- Including the head content
+		include tools/jade_includes/head.jade
+	body
+
+		//- Your website or app content goes here
+
+
+		section#landing
+			.content
+				h1 Welcome to Kickstartr
+				p Jade + Sass boilerplate and file structure to kickstart your new project
+				label Created by Angel Davcev
+
+				.social
+					a(target="_blank" href="http://codepen.io/Gelsot/"): i.fa.fa-codepen
+					a(target="_blank" href="https://www.facebook.com/angel.davcev"): i.fa.fa-facebook
+					a(target="_blank" href="https://twitter.com/NoLuckMakedonec"): i.fa.fa-twitter
+
+
+		//- Including scripts
+		include tools/jade_includes/scripts.jade
+
+		//- Google Analytics: change UA-XXXXX-X to be your site's ID.
+		script.
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
