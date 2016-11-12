@@ -19,13 +19,23 @@
     -->
   </head>
   <body>
-    
+    <div id="light"></div>
     <section id="landing">
       <div class="content">
         <h1>Welcome to Kickstartr</h1>
         <p>Jade + Sass boilerplate and file structure to kickstart your new project</p>
         <label>Created by Angel Davcev</label>
         <div class="social"><a target="_blank" href="http://codepen.io/Gelsot/"><i class="fa fa-codepen"></i></a><a target="_blank" href="https://www.facebook.com/angel.davcev"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://twitter.com/NoLuckMakedonec"><i class="fa fa-twitter"></i></a></div>
+        <div class="ks-switch-wrapper">
+          <div class="ks-switch-unit">
+            <input type="radio" id="ks-switch-on" name="switch" checked>
+            <label for="ks-switch-on">On</label>
+          </div>
+          <div class="ks-switch-unit">
+            <input type="radio" id="ks-switch-off" name="switch">
+            <label for="ks-switch-off">Off</label>
+          </div>
+        </div>
       </div>
     </section>
     <script type="text/javascript" src="tools/js/jquery-1.12.1.min.js"></script>
