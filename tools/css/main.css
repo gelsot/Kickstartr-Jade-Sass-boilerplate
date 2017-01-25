@@ -1,76 +1,276 @@
-/*
-Error: Invalid CSS after "'Raleway'": expected expression (e.g. 1px, bold), was "; font-weight: ..."
-        on line 2 of basics/_fonts.sass
-        from line 9 of main.sass
-
-1: @font-face 
-2: 	font-family: 'Raleway'; font-weight: 800; src: url('../fonts/Raleway-ExtraBold.ttf')
-3: 
-4: @font-face 
-5: 	font-family: 'Raleway'; font-weight: 700; src: url('../fonts/Raleway-Bold.ttf')
-6: 
-7: @font-face 
-
-Backtrace:
-basics/_fonts.sass:2
-main.sass:9
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/script/lexer.rb:220:in `expected!'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/script/parser.rb:602:in `assert_done'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/script/parser.rb:63:in `parse'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/script/parser.rb:183:in `parse'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/script.rb:27:in `parse'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:1120:in `parse_script'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:710:in `parse_property'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:681:in `parse_property_or_rule'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:647:in `parse_line'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:534:in `block in build_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:527:in `each'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:527:in `build_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
-c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"'Raleway'\": expected expression (e.g. 1px, bold), was \"; font-weight: ...\"\A         on line 2 of basics/_fonts.sass\A         from line 9 of main.sass\A \A 1: @font-face \A 2: 	font-family: 'Raleway'; font-weight: 800; src: url('../fonts/Raleway-ExtraBold.ttf')\A 3: \A 4: @font-face \A 5: 	font-family: 'Raleway'; font-weight: 700; src: url('../fonts/Raleway-Bold.ttf')\A 6: \A 7: @font-face "; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body, html {
+  background: white;
+  line-height: 1.5;
+  font-smoothing: antialiased; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #001F3F; }
+
+hr {
+  height: 0;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 10px 0px 20px 0px; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  color: #555; }
+
+h1 {
+  font-size: 34px; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  font-size: 14px;
+  color: #DDDDDD;
+  margin: 0px 0px 20px 0px; }
+
+.ks-lead {
+  font-size: 16px;
+  color: #555;
+  font-weight: 800;
+  margin: 0px 0px 20px 0px; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  src: url("../fonts/Raleway-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  src: url("../fonts/Raleway-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  src: url("../fonts/Raleway-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Skola Sans Cn';
+  font-weight: 500i;
+  src: url("../fonts/Raleway-SemiBoldItalic.ttf"); }
+
+.ks-button {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 20rem;
+  cursor: pointer;
+  background: teal;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4), inset 0px 1px 2px rgba(255, 255, 255, 0.5);
+  transition: 0.2s ease; }
+  .ks-button:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(255, 255, 255, 0.5); }
+  .ks-button:active {
+    background: #004d4d; }
+
+.ks-wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.ks-wrapper-small {
+  width: 60%;
+  margin: 0 auto; }
+
+.ks-switch-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: 3px solid white;
+  margin: 4% auto; }
+
+.ks-switch-unit {
+  width: 50%; }
+  .ks-switch-unit input[type="radio"] {
+    display: none; }
+  .ks-switch-unit label {
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: 0.2s ease 0.1s; }
+  .ks-switch-unit input[type="radio"]:checked ~ label {
+    background: white;
+    color: rebeccapurple;
+    -webkit-animation: pop 0.3s linear;
+    animation: pop 0.3s linear; }
+
+@-webkit-keyframes pop {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+@keyframes pop {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rebeccapurple;
+  color: white;
+  position: relative;
+  transition: 0.7s ease; }
+  #landing h1 {
+    color: white; }
+  #landing .content {
+    text-align: center; }
+    #landing .content .social {
+      width: 120px;
+      margin: 20px auto;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #landing .content .social i {
+        color: white; }
+
+.landing-change {
+  background: #1a0d26 !important; }
+
+#light {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 20em;
+  background: #FFDC00;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  box-shadow: 0px 0px 200px rgba(255, 220, 0, 0.9);
+  left: 50%;
+  margin-left: -50px;
+  top: -200px;
+  z-index: 10;
+  transition: 1s ease 0.2s; }
+
+.light-show {
+  top: 10% !important; }
+
+@media (max-width: 1024px) {
+  #landing {
+    width: 100%; } }
+
+@media (max-width: 800px) {
+  #landing {
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  #landing {
+    width: 100%; } }
