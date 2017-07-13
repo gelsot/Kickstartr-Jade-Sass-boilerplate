@@ -36,6 +36,7 @@ table {
   border-spacing: 0; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body, html {
@@ -117,13 +118,13 @@ p {
   src: url("../fonts/Raleway-SemiBoldItalic.ttf"); }
 
 .ks-button {
-  display: -webkit-inline-flex;
+  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-justify-content: center;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 160px;
@@ -137,9 +138,13 @@ p {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4), inset 0px 1px 2px rgba(255, 255, 255, 0.5);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4), inset 0px 1px 2px rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
   transition: 0.2s ease; }
   .ks-button:hover {
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(255, 255, 255, 0.5);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6), inset 0px 1px 2px rgba(255, 255, 255, 0.5); }
   .ks-button:active {
     background: #004d4d; }
@@ -153,10 +158,10 @@ p {
   margin: 0 auto; }
 
 .ks-switch-wrapper {
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   width: 100px;
@@ -173,17 +178,19 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 13px;
-    display: -webkit-flex;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 40px;
-    -webkit-justify-content: center;
+    -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-items: center;
+    -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: 0.2s ease 0.1s;
+    -o-transition: 0.2s ease 0.1s;
     transition: 0.2s ease 0.1s; }
   .ks-switch-unit input[type="radio"]:checked ~ label {
     background: white;
@@ -210,21 +217,24 @@ p {
 #landing {
   width: 100%;
   height: 100vh;
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background: rebeccapurple;
   color: white;
   position: relative;
+  -webkit-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
   transition: 0.7s ease; }
   #landing h1 {
     color: white; }
@@ -233,10 +243,10 @@ p {
     #landing .content .social {
       width: 120px;
       margin: 20px auto;
-      display: -webkit-flex;
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-between;
+      -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
       #landing .content .social i {
@@ -247,17 +257,20 @@ p {
 
 #light {
   position: absolute;
+  top: -200px;
+  left: 50%;
   width: 100px;
   height: 100px;
   border-radius: 20em;
   background: #FFDC00;
   -webkit-filter: blur(10px);
   filter: blur(10px);
+  -webkit-box-shadow: 0px 0px 200px rgba(255, 220, 0, 0.9);
   box-shadow: 0px 0px 200px rgba(255, 220, 0, 0.9);
-  left: 50%;
   margin-left: -50px;
-  top: -200px;
   z-index: 10;
+  -webkit-transition: 1s ease 0.2s;
+  -o-transition: 1s ease 0.2s;
   transition: 1s ease 0.2s; }
 
 .light-show {
