@@ -265,7 +265,8 @@ section {
   section .ks-mo .ks-mo-figure {
     height: 250px; }
   section .social_media_wrapper a {
-    margin: 0px 10px; }
+    margin: 0px 10px;
+    display: inline-block; }
   section .social_media_wrapper i {
     color: black; }
   section .ks-button {
