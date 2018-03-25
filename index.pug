@@ -7,19 +7,49 @@ html(lang="en")
 
 		//- Your website or app content goes here
 
-		#light
-		section#landing
-			.content
-				h1 Welcome to Kickstartr
-				p Jade + Sass boilerplate and file structure to kickstart your new project
-				label Created by Angel Davcev
-
-				.social
-					a(target="_blank" href="http://codepen.io/Gelsot/"): i.fa.fa-codepen
-					a(target="_blank" href="https://www.facebook.com/angel.davcev"): i.fa.fa-facebook
-					a(target="_blank" href="https://twitter.com/NoLuckMakedonec"): i.fa.fa-twitter
-
-				include tools/jade_includes/components/ks-switch
+		section
+			.ks-wrapper
+				.ks-mo
+					.ks-mo-title-ver
+						label Kickstarter
+					
+					.ks-mo-figure
+						img(src="tools/images/1.jpg")
+					
+					.ks-mo-desc
+						h1 Thank you for downloading! 
+						label Kickstarter Jade + Sass boilerplate
+						p.
+							Hi, I'm Angel Davchev the creator of the Jade and Sass boilerplate.
+							Thank you for downloading it, and happy coding!
+						p.
+							Be sure to check out my other social media profiles.
+			
+				a(href="https://github.com/gelsot/Kickstartr-Jade-Sass-boilerplate/archive/master.zip").ks-button Download it
+					i.fa.fa-download
+			
+			.social_media_wrapper
+				a(href="https://www.facebook.com/angel.davcev" target="_blank")
+					i.fa.fa-facebook
+				
+				a(href="https://twitter.com/" target="_blank")
+					i.fa.fa-twitter
+				
+				a(href="https://www.instagram.com/artsy_fartsy_shmartsy/" target="_blank")
+					i.fa.fa-instagram
+				
+				a(href="https://www.linkedin.com/in/angel-davcev/" target="_blank")
+					i.fa.fa-linkedin
+				
+				a(href="https://dribbble.com/Gelsot" target="_blank")
+					i.fa.fa-dribbble
+				
+				a(href="https://codepen.io/Gelsot/" target="_blank")
+					i.fa.fa-codepen
+				
+				a(href="https://github.com/gelsot" target="_blank")
+					i.fa.fa-github
+				
 
 
 		//- Including scripts

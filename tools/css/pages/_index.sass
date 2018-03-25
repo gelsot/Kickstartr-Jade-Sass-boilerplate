@@ -1,35 +1,15 @@
-#landing
-	+size(100%, 100vh)
+section
 	+flex(flex, center, center, column)
-	background: $purple
-	color: white
-	position: relative
-	transition: 0.7s ease
-	h1
-		color: white
-	.content
-		text-align: center
-		.social
-			+size(120px, null)
-			margin: 20px auto
-			+flex(flex, space-between, null, null)
-			i
-				color: white
+	+size(100%, 100vh)
+	.ks-mo
+		.ks-mo-figure
+			height: 250px
 
-.landing-change
-	background: darken($purple, 30%)!important
-
-
-#light
-	+pos(absolute, -200px, null, null, 50%)
-	+size(100px, 100px)
-	border-radius: 20em
-	background: $yellow
-	filter: blur(10px)
-	box-shadow: 0px 0px 200px rgba($yellow, 0.9)
-	margin-left: -50px
-	z-index: 10
-	transition: 1s ease 0.2s
-
-.light-show
-	top: 10%!important
+	.social_media_wrapper
+		a
+			margin: 0px 10px
+		i
+			color: black
+	
+	.ks-button
+		margin: 3rem auto 4rem auto
