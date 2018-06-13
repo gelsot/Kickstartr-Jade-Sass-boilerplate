@@ -5,7 +5,6 @@ Kickstartr is a boilerplate, folder structure created by [Angel Davcev](https://
 $ git clone https://github.com/gelsot/Kickstartr-Jade-Sass-boilerplate.git
 ```
 Or you can download it as [.zip](https://github.com/gelsot/Kickstartr-Jade-Sass-boilerplate/archive/master.zip)
-***
 ### Tools directory
 This directory is the root for all the procet assets. It's content includes:
 * ``` css```
@@ -14,7 +13,7 @@ This directory is the root for all the procet assets. It's content includes:
 * ```javascript```
 * ```pug_includes```
 
-#### CSS directory
+### CSS directory
 This directory is where the ```main.sass``` file is located, which compiles to ```main.css```. The ```main.sass``` file is where all the ```.sass``` partial files are linked. 
 The ```.sass``` partial files are located in the directories and are named with underscore ```_``` in front, so they can indicate that they are linked to ```main.sass``` and not compiled separately. 
 The ```css``` subdirectories include:
