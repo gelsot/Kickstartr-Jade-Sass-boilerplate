@@ -1,7 +1,11 @@
+//@prepros-prepend vendor/jquery.js
+//@prepros-prepend vendor/TweenMax.js
+//@prepros-prepend vendor/TextPlugin.js
+
 $(document).ready(function(){
 
 	// Your JavaScript goes here
-	const introAnimation = new TimelineMax();
+	const introAnimation = new TimelineMax({delay: 2});
 
 	introAnimation
 		.from($('.ks-mo-title-ver'), 0.5, {
@@ -22,7 +26,7 @@ $(document).ready(function(){
 			transformOrigin: 'left',
 			ease: Back.easeOut
 		}, 0.2)
-		.from($('.ks-button'), 0.5, {
+		.from($('.intro_btn'), 0.5, {
 			y: 30,
 			autoAlpha: 0,
 			ease: Back.easeOut
@@ -32,9 +36,10 @@ $(document).ready(function(){
 			autoAlpha: 0,
 			ease: Back.easeOut
 		}, 0.1, '-=0.2')
-
-	setTimeout(() => {
-		introAnimation.play();
-	}, 1200);
+		.from($('.ks-mo-title-hor'), 0.5, {
+			scaleX: 0,
+			transformOrigin: 'left',
+			ease: Power2.easeInOut
+		})
 
 });

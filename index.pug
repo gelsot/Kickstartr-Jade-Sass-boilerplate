@@ -2,8 +2,10 @@ doctype html
 html(lang="en")
 	head
 		//- Including the head content
-		include tools/jade_includes/head
+		include tools/pug_includes/head
 	body
+
+		include tools/pug_includes/components/mixins
 
 		//- Your website or app content goes here
 
@@ -25,7 +27,7 @@ html(lang="en")
 						p.
 							Be sure to check out my other social media profiles.
 			
-				a(href="https://github.com/gelsot/Kickstartr-Jade-Sass-boilerplate/archive/master.zip").ks-button Download it
+				a(href="https://github.com/gelsot/Kickstartr-Jade-Sass-boilerplate/archive/master.zip").ks-button.intro_btn Download it
 					i.fa.fa-download
 			
 			.social_media_wrapper
@@ -49,17 +51,27 @@ html(lang="en")
 				
 				a(href="https://github.com/gelsot" target="_blank")
 					i.fa.fa-github
+
+
+		section
+			.ks-wrapper
+				.ks-mo
+					.ks-mo-title-hor
+						label Our work
+					
+					.ks-mo-desc
+						h4 What we do
+						p.
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptatum quisquam totam dicta cumque voluptatibus quia iste, temporibus laudantium quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius magni vitae deleniti consectetur eveniet sint! Sit libero sequi corrupti.
+						
+						.ks-button Read More
+							i.fa.fa-long-arrow-right
+
+				
+				+user_card('https://scontent.fskp1-1.fna.fbcdn.net/v/t1.0-9/31403977_10214117174137530_8807015566423359488_n.jpg?_nc_cat=0&oh=234a51e7aeaea185386f477d26130cbb&oe=5BBA111E', 'Angel Davcev', 'UI/UX Designer', 'fa fa-paper-plane', 'mailto:angeldavchev@gmail.com')
+
 				
 
 
 		//- Including scripts
-		include tools/jade_includes/scripts
-
-		//- Google Analytics: change UA-XXXXX-X to be your site's ID.
-		script.
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-XXXXX-X');ga('send','pageview');
+		include tools/pug_includes/scripts

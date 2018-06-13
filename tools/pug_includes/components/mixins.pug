@@ -1,0 +1,11 @@
+mixin user_card(avatar, name, proffession, icon, link)
+	.card
+		figure
+			img(src=avatar)
+		aside
+			h4= name
+			label= proffession
+
+		.icon
+			a(href=link)
+				i(class=icon)
